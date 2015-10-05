@@ -3,7 +3,7 @@
 	include_once '../private/functions.php';
 	include_once '../private/register.inc.php';
 	sec_session_start();
-	if (login_check($mysqli) == "admin") {
+	if (login_check($mysqli) !== false) {
 $file = "uploads".$_GET['filename'];
 $file    = str_replace('../', '', $file);
 if (file_exists($file)) {
