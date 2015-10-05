@@ -1,0 +1,40 @@
+[02-Oct-2015 15:19:36 UTC] PHP Fatal error:  Call to undefined function sec_session_start() in /home/jstockwin/public_html/includes/head.php on line 21
+[02-Oct-2015 15:20:41 UTC] PHP Fatal error:  Call to undefined function sec_session_start() in /home/jstockwin/public_html/includes/head.php on line 21
+[02-Oct-2015 15:24:09 UTC] PHP Fatal error:  Call to undefined function sec_session_start() in /home/jstockwin/public_html/includes/head.php on line 21
+[02-Oct-2015 15:24:12 UTC] PHP Fatal error:  Call to undefined function sec_session_start() in /home/jstockwin/public_html/includes/head.php on line 21
+[02-Oct-2015 15:24:41 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/includes/head.php on line 68
+[02-Oct-2015 15:24:52 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/includes/head.php on line 68
+[02-Oct-2015 15:25:43 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/includes/head.php on line 68
+[02-Oct-2015 15:26:14 UTC] PHP Fatal error:  Call to undefined function sec_session_start() in /home/jstockwin/public_html/includes/head.php on line 21
+[02-Oct-2015 15:32:07 UTC] PHP Fatal error:  Call to a member function close() on a non-object in /home/jstockwin/public_html/includes/register.inc.php on line 207
+[02-Oct-2015 16:06:59 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/login.php on line 20
+[02-Oct-2015 16:08:59 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/login.php on line 20
+[02-Oct-2015 16:14:22 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/login.php on line 20
+[02-Oct-2015 16:32:14 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/adminconsole.php on line 4
+[02-Oct-2015 16:32:23 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/adminconsole.php on line 4
+[02-Oct-2015 16:32:31 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/adminconsole.php on line 4
+[02-Oct-2015 16:33:03 UTC] PHP Fatal error:  Call to undefined function login_check() in /home/jstockwin/public_html/adminconsole.php on line 4
+[02-Oct-2015 18:08:49 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message '/uploads/mvc.pdf' in /home/jstockwin/public_html/download.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jstockwin/public_html/download.php on line 3
+[02-Oct-2015 18:10:58 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message '/uploads/mvc.pdf' in /home/jstockwin/public_html/download.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jstockwin/public_html/download.php on line 3
+[02-Oct-2015 18:14:07 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Exists' in /home/jstockwin/public_html/download.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jstockwin/public_html/download.php on line 5
+[04-Oct-2015 10:29:09 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'uploads/' in /home/jstockwin/public_html/tutorarea.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/jstockwin/public_html/tutorarea.php on line 21
+[04-Oct-2015 10:32:38 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'uploads/' in /home/jstockwin/public_html/tutorarea.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/jstockwin/public_html/tutorarea.php on line 21
+[04-Oct-2015 10:33:05 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'uploads/' in /home/jstockwin/public_html/tutorarea.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/jstockwin/public_html/tutorarea.php on line 21
