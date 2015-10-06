@@ -26,7 +26,6 @@ James Powell - Tutor Liaison Officer<br>
 
 <p>If you have any other questions please contact <a href="mailto:info@students4students.co.uk">info@students4students.co.uk</a></p>
 
-<iframe src="https://docs.google.com/forms/d/1rzrMjpIqnAYwXS2WH34e3UFol_CnizKyb3IVjJQlpjE/viewform?embedded=true" width="760" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 <h1>Social Media</h1>
 <p>Find us on Facebook and Twitter where you can find out more information about what we are doing.</p>
