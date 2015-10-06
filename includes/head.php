@@ -1,14 +1,27 @@
 <?php 
+if($_SERVER['HTTP_HOST'] == "localhost"){
+	
+	$private = "C:/wamp2/www/private/";
+}else{
+	
+	$private = "/home/jstockwin/private/";
+}
 // Require https
-include_once '../private/psl-config.php';
+include_once $private.'psl-config.php';
+include_once $private.'db_connect.php';
+include_once $private.'functions.php';
+include_once $private.'register.inc.php';
+sec_session_start();
 $secure = SECURE;
 if ($secure == true){
 if ($_SERVER['HTTPS'] != "on") {
+	
     $url = "https://". $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
     header("Location: $url");
     exit;
 }
 }
+
 ?>
 
 
@@ -27,14 +40,7 @@ if ($_SERVER['HTTPS'] != "on") {
 	<script src = "/js/functions.js"> </script>
 	<script type="text/JavaScript" src="js/sha512.js"></script> 
 	<script type="text/JavaScript" src="js/forms.js"></script> 
-	
-	<!-- PHP -->
-	<?php
-		include_once '../private/db_connect.php';
-		include_once '../private/functions.php';
-		include_once '../private/register.inc.php';
-		sec_session_start();
-	?>
+
 	
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
@@ -122,7 +128,7 @@ if ($_SERVER['HTTPS'] != "on") {
 						<li><a href="/get-involved-schools.php">For Schools</a></li>
 					</ul>
 				</li>
-				<li><a href="/blog.php">Blog</a></li>
+				<li><a href="/blog/index.php">Blog</a></li>
 				<li><a href="/contact-us.php">Contact Us</a></li>
 							
 			</ul>
@@ -182,7 +188,7 @@ if ($_SERVER['HTTPS'] != "on") {
 						<li><a href="/get-involved-schools.php">- For Schools</a></li>
 					</ul>
 				</li>
-				<li><a href="/index.php">Blog</a></li>
+				<li><a href="/blog/index.php">Blog</a></li>
 				<li><a href="/contact-us.php">Contact Us</a></li>
 
 				
