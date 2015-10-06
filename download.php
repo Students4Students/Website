@@ -5,7 +5,8 @@
 	sec_session_start();
 	if (login_check($mysqli) !== false) {
 $file = "uploads".$_GET['filename'];
-$file    = str_replace('../', '', $file);
+$dir = realpath($file);
+			if (strpos($dir, "public_html\uploads") !== false){
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');
@@ -19,6 +20,9 @@ if (file_exists($file)) {
 }else{
 echo 'file '.$file.'not found';
 }
+			}else{
+			echo 'Error: Invalid directory';
+			}
 	}else{
 	echo 'You are not authorised to do this. Please <a href="login.php">log in</a>';
 	}
