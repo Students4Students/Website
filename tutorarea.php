@@ -10,7 +10,7 @@
 		return $ss;
 	}
 	
-	function myScanDir($dir, $level, $rootLen)
+	function myScanDir($dir, $level)
 	{
 		global $pathLen;
 		
@@ -33,17 +33,58 @@
 			closedir($handle);
 			
 			natsort($allFiles);
-			
+			if ($_GET['dir'] !== "/"){
+				echo "<i class=\"fa fa-level-up\"></i> <a href=\"tutorarea.php?dir=".substr($_GET['dir'], 0, strrpos( substr($_GET['dir'],0,-1), '/'))."/\">Up a level</a><br>";
+			}
 			foreach($allFiles as $value)
 			{
 				$current = $_GET['dir'];
-				$displayName = substr($value, $rootLen + 4);
+				$displayName = substr($value, strlen($current) + 3);
 				$fileName    = 'uploads'.substr($value, 3);
 				$linkName    = str_replace(" ", "%20", substr($value, $pathLen + 3));
 				if (is_dir($fileName)) {
-					echo prePad($level) ."<a href=\"tutorarea.php?dir=".$current.$linkName."/\">".$displayName."</a> <br>\n";
+					echo prePad($level) ."<i class=\"fa fa-folder\"></i> <a href=\"tutorarea.php?dir=".$linkName."/\">".$displayName."</a> <br>\n";
 					} else {
-					echo prePad($level) . "<a href=\"download.php?filename=".$current . $linkName . "\" style=\"text-decoration:none;\">" . $displayName . "</a><br>\n";
+					$file_parts = pathinfo($fileName);
+					switch($file_parts['extension']){
+						case "pdf":
+						echo '<i class="fa fa-file-pdf-o"></i>';
+						break;
+						
+						case "jpg":
+						echo '<i class="fa fa-file-image-o"></i>';
+						break;
+						
+						case "png":
+						echo '<i class="fa fa-file-image-o"></i>';
+						break;
+						
+						case "gif":
+						echo '<i class="fa fa-file-image-o"></i>';
+						break;
+						
+						case "svg":
+						echo '<i class="fa fa-file-image-o"></i>';
+						break;
+						
+						case "doc":
+						echo '<i class="fa fa-file-word-o"></i>';
+						break;
+						
+						case "docx":
+						echo '<i class="fa fa-file-word-o"></i>';
+						break;
+						
+						case "xls":
+						echo '<i class="fa fa-file-excel-o"></i>';
+						break;
+						
+						case "ppt":
+						echo '<i class="fa fa-file-powerpoint-o"></i>';
+						break;
+						
+					}
+					echo prePad($level) . " <a href=\"download.php?filename=" . $linkName . "\" style=\"text-decoration:none;\">" . $displayName . "</a><br>\n";
 				}
 			}
 		}
@@ -52,11 +93,12 @@
 	
 	if (login_check($mysqli) !== false) {
 		echo '<p>Welcome '.htmlentities($_SESSION['username']).' ('. login_check($mysqli).')</p>';
-		
-		if (login_check($mysqli) == "admin") {
-			$dir = "uploads".$_GET['dir'];
-			$dir = realpath($dir);
-			if (strpos($dir, "public_html\uploads") !== false){
+		$dir = "uploads".$_GET['dir'];
+		$dir = realpath($dir);
+		if (strpos($dir, "public_html\uploads") !== false){
+			if (login_check($mysqli) == "admin") {
+				
+				
 				
 				$dir2 = $_GET['dir'];
 				echo '<form action="upload.php?dir='.$_GET['dir'].'" method="post" enctype="multipart/form-data">';
@@ -117,21 +159,20 @@
 				
 				
 				
-				$pathLen = 0;
-				
-				myScanDir($dir, 0, $dir); 
-				}else{
-				
-				echo 'Error: File path not valid';
 			}
+			
+			myScanDir($dir, 0); 
+		}else {
+			echo 'Error: File path not valid';
 		}
 		
 		
+	}else{
 		
-		} else {
+		
 		echo '<p>';
-		echo '	<span class="error">You are not authorised to access this page.</span> Please <a href="login.php">login</a>.';
-		echo '</p>';
+			echo '	<span class="error">You are not authorised to access this page.</span> Please <a href="login.php">login</a>.';
+			echo '</p>';
 	}
 	
 	echo '</div>';
