@@ -37,9 +37,9 @@ if ($_SERVER['HTTPS'] != "on") {
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	
 	<!-- JS -->
-	<script src = "/js/functions.js"> </script>
-	<script type="text/JavaScript" src="js/sha512.js"></script> 
-	<script type="text/JavaScript" src="js/forms.js"></script> 
+	<script type="text/JavaScript" src = "/js/functions.js"> </script>
+	<script type="text/JavaScript" src="/js/sha512.js"></script> 
+	<script type="text/JavaScript" src="/js/forms.js"></script> 
 
 	
 	<!-- jQuery -->
@@ -128,7 +128,7 @@ if ($_SERVER['HTTPS'] != "on") {
 						<li><a href="/get-involved-schools.php">For Schools</a></li>
 					</ul>
 				</li>
-				<li><a href="/blog/index.php">Blog</a></li>
+				<li><a href="/blog/page1.php">Blog</a></li>
 				<li><a href="/contact-us.php">Contact Us</a></li>
 							
 			</ul>
@@ -188,7 +188,7 @@ if ($_SERVER['HTTPS'] != "on") {
 						<li><a href="/get-involved-schools.php">- For Schools</a></li>
 					</ul>
 				</li>
-				<li><a href="/blog/index.php">Blog</a></li>
+				<li><a href="/blog/page1.php">Blog</a></li>
 				<li><a href="/contact-us.php">Contact Us</a></li>
 
 				
