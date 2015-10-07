@@ -28,8 +28,8 @@
 		
 		$post = '<p class="date"><span class="aligner"></span>'.$date.'</p>';
 		fwrite($myfile, $post);
-		fwrite($myfile,'<div class="blogdivider"></div>');
-		fwrite($myfile, file_get_contents($file."/body.txt"));
+		fwrite($myfile,'<div class="blogdivider"></div><br>');
+		fwrite($myfile, str_replace("\n","<br>\n",file_get_contents($file."/body.txt")));
 		
 		fwrite($myfile,'</div>');
 		fclose($myfile);
