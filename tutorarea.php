@@ -95,6 +95,7 @@
 		echo '<p>Welcome '.htmlentities($_SESSION['username']).' ('. login_check($mysqli).')</p>';
 		$dir = "uploads".$_GET['dir'];
 		$dir = realpath($dir);
+		throw new Exception($dir);
 		if (strpos($dir, "public_html\uploads") !== false){
 			if (login_check($mysqli) == "admin") {
 				
