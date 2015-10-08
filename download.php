@@ -6,7 +6,7 @@
 	if (login_check($mysqli) !== false) {
 $file = "uploads".$_GET['filename'];
 $dir = realpath($file);
-			if (strpos($dir, "public_html\uploads") !== false){
+			if (strpos($dir, "public_html\uploads") !== false || strpos($dir, "public_html/uploads") !== false ){
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');
