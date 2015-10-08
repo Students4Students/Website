@@ -33,8 +33,8 @@ James Powell - Tutor Liaison Officer<br>
 			<a class="twitter-timeline" href="https://twitter.com/Students4St" data-widget-id="595301563159191552">Tweets by @Students4St</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			
-			<div class="fb-page" style="margin-left: 50px; vertical-align: top; margin-bottom: 20px;" data-href="https://www.facebook.com/pages/Students4Students/902232713162573" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Students4Students/902232713162573"><a href="https://www.facebook.com/pages/Students4Students/902232713162573">Students4Students</a></blockquote></div></div>
-		</div>	
+			<div class="fb-page" style="margin-left: 50px; vertical-align: top; margin-bottom: 20px; display: inline-block; width:500px;" data-href="https://www.facebook.com/pages/Students4Students/902232713162573" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Students4Students/902232713162573"><a href="https://www.facebook.com/pages/Students4Students/902232713162573">Students4Students</a></blockquote></div></div>
+		</div>
 </div>
 	
 <?php include 'includes/footer.php'?>
