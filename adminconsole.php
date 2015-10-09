@@ -84,6 +84,7 @@
             Permission <select name="type" id="type">
 			<option value="tutor">Tutor</option>
 			<option value="admin">Admin</option>
+			<option value="blog">Blog</option>
 			</select>
             <input type="button" 
 			value="Update" 

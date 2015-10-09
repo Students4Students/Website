@@ -93,8 +93,10 @@ if ($_SERVER['HTTPS'] != "on") {
 					<ul class="dropdownlist">
 						<li><a href="/tutorarea.php?dir=/">Tutor Area</a></li>
 						<li><a href="/myaccount.php">My Account</a></li>
-						<?php if (login_check($mysqli) == "admin") : ?>
+						<?php if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog") : ?>
 						<li><a href="/blog.php">Edit Blog</a></li>
+						<?php endif; ?>
+						<?php if (login_check($mysqli) == "admin") : ?>
 						<li><a href="/adminconsole.php">Admin Console</a></li>
 						<?php endif; ?>
 						<li><a href="/logout.php">Log Out</a></li>
@@ -153,9 +155,11 @@ if ($_SERVER['HTTPS'] != "on") {
 					<ul class="mobdropdownlist">
 						
 						<li><a href="/tutorarea.php?dir=/">Tutor Area</a></li>
-						<li><a href="/myaccount.php">My Account</a></li>
-						<?php if (login_check($mysqli) == "admin") : ?>
+						<li><a href="/myaccount.php">My Account</a></li>	
+						<?php if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog") : ?>
 						<li><a href="/blog.php">Edit Blog</a></li>
+						<?php endif; ?>
+						<?php if (login_check($mysqli) == "admin") : ?>
 						<li><a href="/adminconsole.php">Admin Console</a></li>
 						<?php endif; ?>
 						<li><a href="/logout.php">Log Out</a></li>

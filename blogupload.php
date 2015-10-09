@@ -3,7 +3,7 @@
 	include_once '../private/functions.php';
 	include_once '../private/register.inc.php';
 	sec_session_start();
-	if (login_check($mysqli) == "admin") {
+	if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog") {
 
 	$target_dir = $_GET['dir'].'/';
 	//$target_dir = "uploads/";

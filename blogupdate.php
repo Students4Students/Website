@@ -12,7 +12,7 @@
 	include_once $private.'functions.php';
 sec_session_start();?>
 
-<?php if (login_check($mysqli) == "admin") : ?>
+<?php if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog") : ?>
 
 <?php
 	function rrmdir($dir) { 

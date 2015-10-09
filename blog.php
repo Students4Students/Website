@@ -1,6 +1,6 @@
 <?php include 'includes/head.php'?>
 <div class="content">
-	<?php if (login_check($mysqli) == "admin") : ?>
+	<?php if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog") : ?>
 	
 	
 	<?php if(empty($_GET['blog'])){
