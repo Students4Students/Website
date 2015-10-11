@@ -87,6 +87,10 @@
 						echo '<i class="fa fa-file-powerpoint-o"></i>';
 						break;
 						
+						case "zip":
+						echo '<i class="fa fa-file-zip-o"></i>';
+						break;
+						
 					}
 					echo prePad($level) . " <a href=\"download.php?filename=" . $linkName . "\" style=\"text-decoration:none;\">" . $displayName . "</a><br>\n";
 				}
