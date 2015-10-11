@@ -79,6 +79,10 @@
 						echo '<i class="fa fa-file-excel-o"></i>';
 						break;
 						
+						case "xlsx":
+						echo '<i class="fa fa-file-excel-o"></i>';
+						break;
+						
 						case "ppt":
 						echo '<i class="fa fa-file-powerpoint-o"></i>';
 						break;
