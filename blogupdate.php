@@ -20,7 +20,7 @@ sec_session_start();?>
 			if(is_dir($file)) rrmdir($file); else unlink($file); 
 		} rmdir($dir); 
 	}
-		
+	
 	if (!empty($_POST['title']) && !empty($_POST['body']) && !empty($_GET['blog']) && !empty($_GET['new'])){
 		if($_GET['new'] = "true"){
 			mkdir($_GET['blog']);
@@ -36,8 +36,12 @@ sec_session_start();?>
 		
 		header('Location: /generateBlogPosts.php');
 		}else if(!empty($_GET['delete'])){
-		rrmdir($_GET['delete']);
-		header('Location: /generateBlogPosts.php');
+		if (login_check($mysqli) == "admin"){
+			rrmdir($_GET['delete']);
+			header('Location: /generateBlogPosts.php');
+			}else{
+			echo 'You are not authorised to do this. Please log in to an admin account.';
+		}
 		}else{
 		
 		echo 'Invalid request';

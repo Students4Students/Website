@@ -23,17 +23,18 @@
 		
 		echo '<br><br><br><br>';
 		
-		
-		echo '<form action="blogupdate.php" method="get" onsubmit="return confirm(\'Are you sure you want to DELETE this post?\nThis cannot be undone. \');">';
-		echo 'Choose a blog post to DELETE. THIS CANNOT BE UNDONE.<br>';
-		echo '<select name="delete">';
-		foreach(array_reverse(glob($dir)) as $file){
-			echo '<option value="'.$file.'">'.file_get_contents($file."/title.txt").'</option>';
+		if (login_check($mysqli) == "admin"){
+			echo '<form action="blogupdate.php" method="get" onsubmit="return confirm(\'Are you sure you want to DELETE this post?\nThis cannot be undone. \');">';
+			echo 'Choose a blog post to DELETE. THIS CANNOT BE UNDONE.<br>';
+			echo '<select name="delete">';
+			foreach(array_reverse(glob($dir)) as $file){
+				echo '<option value="'.$file.'">'.file_get_contents($file."/title.txt").'</option>';
 			
+			}
+			echo '</select>';
+			echo '<input type="submit" value="DELETE THIS POST">';
+			echo '</form>';
 		}
-		echo '</select>';
-		echo '<input type="submit" value="DELETE THIS POST">';
-		echo '</form>';
 		
 		}else{
 		
