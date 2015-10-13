@@ -16,15 +16,15 @@
 
 Alex Astley<br>
 
-	<a href="mailto:alex.astley@students4students.co.uk">alex.astley@students4students.co.uk</a><br></p>
+	<a href="mailto:alex.astley@students4students.org.uk">alex.astley@students4students.org.uk</a><br></p>
 
 <p>If you are interested in becoming a tutor and would like more information then please take a look at our <a href="get-involved-tutors.php#FAQ">FAQ</a> or alternatively contact:<br><br>
 
 James Powell - Tutor Liaison Officer<br>
 
-<a href="mailto:tutor.liason.officer@students4students.co.uk">tutor.liason.officer@students4students.co.uk</a><br></p>
+<a href="mailto:tutor.liason.officer@students4students.org.uk">tutor.liason.officer@students4students.org.uk</a><br></p>
 
-<p>If you have any other questions please contact <a href="mailto:info@students4students.co.uk">info@students4students.co.uk</a></p>
+<p>If you have any other questions please contact <a href="mailto:info@students4students.org.uk">info@students4students.org.uk</a></p>
 
 
 <h1>Social Media</h1>
