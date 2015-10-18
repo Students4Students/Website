@@ -7,7 +7,7 @@
 
 <p>As a charity, we are focused primarily on English and Maths as a foundation for our tutoring. 
 
-Our main aim is to educate primary school children - who aren’t quite reaching their potential 
+Our main aim is to educate primary school children - who aren't quite reaching their potential 
 
 in class - with one-to-one hourly tutoring sessions taken by university and sixth form 
 
@@ -41,7 +41,7 @@ closer one-to-one learning structure hourly each week, the possibilities are end
 
 future of Students4Students is the future of educational equality, educating tomorrow with 
 
-today’s brightest.</p>
+today's brightest.</p>
 </div>
 	
 <?php include 'includes/footer.php'?>
