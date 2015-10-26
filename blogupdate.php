@@ -10,11 +10,11 @@
 	include_once $private.'psl-config.php';
 	include_once $private.'db_connect.php';
 	include_once $private.'functions.php';
-sec_session_start();?>
+sec_session_start();
 
-<?php if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog") : ?>
+ if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog"){ 
 
-<?php
+
 	function rrmdir($dir) { 
 		foreach(glob($dir . '/*') as $file) { 
 			if(is_dir($file)) rrmdir($file); else unlink($file); 
@@ -49,11 +49,9 @@ sec_session_start();?>
 	}
 	
 	
-?>
-
-<?php else : ?>
-<p>
-	<span class="error">You are not authorised to access this page.</span> Please <a href="login.php">login</a>.
-</p>
-<?php endif; ?>
+ } else {
+echo '<p>';
+echo '	<span class="error">You are not authorised to access this page.</span> Please <a href="login.php">login</a>.';
+echo '</p>';
+ } ?>
 

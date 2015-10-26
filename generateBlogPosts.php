@@ -10,11 +10,7 @@ if($_SERVER['HTTP_HOST'] == "localhost"){
 include_once $private.'psl-config.php';
 include_once $private.'db_connect.php';
 include_once $private.'functions.php';
-sec_session_start();?>
-
-	<?php if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog") : ?>
-
-<?php
+sec_session_start(); if (login_check($mysqli) == "admin" || login_check($mysqli) == "blog"){
 	// Set number of posts per page:
 	$number = 3;
 	
@@ -120,9 +116,8 @@ sec_session_start();?>
 	header('Location: /blog/page1.php');
 	
 	
-?>
-		<?php else : ?>
-	<p>
-		<span class="error">You are not authorised to access this page.</span> Please <a href="login.php">login</a>.
-	</p>
-	<?php endif; ?>
+} else {
+echo '<p>';
+echo '	<span class="error">You are not authorised to access this page.</span> Please <a href="login.php">login</a>.';
+echo '</p>';
+}?>
