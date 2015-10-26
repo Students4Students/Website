@@ -19,8 +19,6 @@
 		echo '	</select>';
 		echo '	<input type="submit" value="Submit">';
 		echo '</form>';
-		echo '<br>';
-		echo 'Once you\'ve made a change, click <a href="/generateBlogPosts.php">here</a> to update the blog';
 		
 		
 		echo '<br><br><br><br>';
