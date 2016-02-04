@@ -6,7 +6,7 @@
 	</div>
 	<div>
 	<p>Developed by <a href="http://jakestockwin.co.uk/" style="text-decoration: none; color: #FFF;" target="_blank">Jake Stockwin</a>.<br>
-	&copy; 2015 Students4Students</p>
+	&copy; 2016 Students4Students</p>
 	</div>
 </div>
 	
